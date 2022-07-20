@@ -1,0 +1,30 @@
+@use "../general/variables"as v;
+
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: v.$darkGray;
+
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    .title-l {
+      color: v.$white;
+    }
+
+    .title-d {
+      color: v.$yellow;
+    }
+  }
+
+  &__fav {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+}
