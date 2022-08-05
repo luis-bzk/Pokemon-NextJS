@@ -1,4 +1,4 @@
-@use "../general/variables"as v;
+@use "../general/variables" as v;
 
 .container {
   max-width: 110rem;
@@ -40,6 +40,15 @@
   overflow: hidden;
   cursor: pointer;
 
+  &:hover {
+    transform: translateY(-10px);
+    background-color: v.$blue;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
   &__image {
     flex: 1;
   }
@@ -55,22 +64,10 @@
 
       @media (min-width: v.$phone) {
         font-size: 1.2rem;
-
       }
     }
   }
-
-  &:hover {
-    transform: translateY(-10px);
-    background-color: v.$blue;
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
 }
-
-
 
 //  touch effect
 
@@ -89,8 +86,7 @@
   height: 1rem;
   width: 1rem;
   border-radius: 5px;
-  transition: all .6s;
-
+  transition: all 0.6s;
 }
 
 .card:active:after {
@@ -98,5 +94,5 @@
   padding: 0;
   margin: 0;
   opacity: 1;
-  transition: 0s
+  transition: 0s;
 }

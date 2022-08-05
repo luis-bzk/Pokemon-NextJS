@@ -12,16 +12,16 @@ export const PokemonCard: FC<Props> = ({ pokemon }) => {
 
   const router = useRouter();
 
-  const onClick = () => {
-    router.push(`pokemon/${id}`);
+  const onCardClick = () => {
+    router.push(`name/${name}`);
   };
 
   return (
-    <div className="card" onClick={onClick}>
+    <div className="card" onClick={onCardClick}>
       <div className="card__image">
         <Image
           layout="responsive"
-          width="100%"
+          width={"100%"}
           height={100}
           src={image}
           alt={`pokemon ${name}`}

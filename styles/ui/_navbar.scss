@@ -12,6 +12,7 @@
 
   &__title {
     display: flex;
+    flex-direction: row;
     align-items: center;
 
     .title-l {
@@ -24,7 +25,12 @@
   }
 
   &__fav {
+    color: v.$white;
     font-weight: 700;
     font-size: 1.2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
