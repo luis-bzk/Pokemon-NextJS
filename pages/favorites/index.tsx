@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { NextPage } from "next";
-import Image from "next/image";
 import { Layout } from "../../components/layouts";
 import { NoFavorites } from "../../components/ui";
 import { localFavorites } from "../../utils";
 import { FavoritesPokemons } from "../../components/pokemon";
 
-const favoritesPage: NextPage = () => {
+const FavoritesPage: NextPage = () => {
   const [favoritePokemons, setFavoritePokemons] = useState<number[]>([]);
 
   useEffect(() => {
@@ -26,4 +25,4 @@ const favoritesPage: NextPage = () => {
   );
 };
 
-export default favoritesPage;
+export default FavoritesPage;
